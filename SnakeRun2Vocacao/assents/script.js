@@ -49,7 +49,7 @@ const randomPosition = () => {
   return Math.round(number / 30) * 30
 }
 
-
+/*var apple*/
 const randomColor = () => {
   const red = randomNumber(0, 255)
   const green = randomNumber(0, 255)
@@ -84,11 +84,11 @@ const drawFood = () => {
 
 //A const desenhSnake recebe os elementos e cria um começo da Snake
 const drawSnake = () => {
-  ctx.fillStyle = "#66CDAA"
+  ctx.fillStyle = "#3c8024"
 
   snake.forEach((position, index) => {
     if (index == snake.length - 1) {
-      ctx.fillStyle = "#FFA500"
+      ctx.fillStyle = "#3c911d"
     }
 
     ctx.fillRect(position.x, position.y, size, size)
