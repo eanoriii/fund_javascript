@@ -98,7 +98,7 @@ const drawSnake = () => {
 
 
 //Mover dentro da Grade
-const moveSnake = () => {
+const moveSnake = () => {     //plano cartesiano para moovimentacao da cobra
   if (!direction) return
 
   const head = snake[snake.length - 1]

@@ -1,9 +1,9 @@
 @charset "UTF-08";
 
 /* 
-*
+. para class e # para id
+*{resete de pag}
 */
-
 * {
     margin: 0;
     padding: 0;
@@ -15,11 +15,11 @@
 body,
 main {
     background-color: rgba(255, 255, 255, 0.903);
-    display: flex;
-    flex-direction: column;
-    min-width: 100vh;
-    align-items: center;
-    justify-content: center;
+    display: flex;/* serve para deixar o layout flexivel para que possamos usar os flexbox */
+    flex-direction: column; /*ordernar em coluna*/
+    min-width: 100vh; /*largura minima da div main*/
+    align-items: center; /*posicionar na vertical*/
+    justify-content: center; /*posicionar na horizontal*/
 
 }
 
