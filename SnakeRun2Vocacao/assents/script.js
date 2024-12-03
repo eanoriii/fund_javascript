@@ -29,7 +29,7 @@ let snake = [initialPosition]
 ]*/
 
 
-
+/*Criar a pontuação das apple em dez em dez pontos*/ 
 const incrementScore = () => {
   score.innerText = + score.innerText + 10
 }
@@ -49,7 +49,7 @@ const randomPosition = () => {
   return Math.round(number / 30) * 30
 }
 
-/*var apple*/
+
 const randomColor = () => {
   const red = randomNumber(0, 255)
   const green = randomNumber(0, 255)
@@ -57,7 +57,6 @@ const randomColor = () => {
 
   return `rgb(${red}, ${green}, ${blue})`
 }
-
 
 
 //Criando a const para a Apple, Sempre Laranja
@@ -84,11 +83,11 @@ const drawFood = () => {
 
 //A const desenhSnake recebe os elementos e cria um começo da Snake
 const drawSnake = () => {
-  ctx.fillStyle = "#3c8024"
+  ctx.fillStyle = "#a30072"
 
   snake.forEach((position, index) => {
     if (index == snake.length - 1) {
-      ctx.fillStyle = "#3c911d"
+      ctx.fillStyle = "#de1bd4"
     }
 
     ctx.fillRect(position.x, position.y, size, size)
@@ -98,7 +97,7 @@ const drawSnake = () => {
 
 
 //Mover dentro da Grade
-const moveSnake = () => {     //plano cartesiano para moovimentacao da cobra
+const moveSnake = () => {
   if (!direction) return
 
   const head = snake[snake.length - 1]

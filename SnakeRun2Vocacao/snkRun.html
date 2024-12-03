@@ -5,23 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snake Game</title>
-  <link rel="shortcut icon" href="/assents/gamepad.svg" type="image/x-icon"> <!--logo que aparece na aba-->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /><!--link externo para estilizacao da fonte-->
-  <link rel="stylesheet" href="assents/style.css"><!--css para estilizacao da pagina-->
+  <link rel="shortcut icon" href="/assents/gamepad.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="assents/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
 </head>
-<body><!--conteudo da pagina-->
 
-  <main><!--divisao principal da pagina-->
-    <h1>Snake Run</h1><!--h1 paara titulos grandes, indo da h1 a h6-->
+<body>
+<section>
+  <video autoplay muted loop>
+    <source src="/assents/plano_de_fundo.mp4" type="video/mp4">
+ </video>
+</section>
+
+ <main>
+    <h1>Snake Run</h1>
 
     <div class="score">Score: <span class="score--value">00</span></div>
 
     <div class="menu-screen">
-      <span class="game-over">Game Over</span><!--span de texto condicionado a perda do jogador-->
+      <span class="game-over">Game Over</span>
       <span class="final-score">score <span>00</span></span>
 
-      <button class="btn-play"><!--botao para recomeçar-->
+      <button class="btn-play">
 
         <span class="material-symbols-outlined">
           play_circle
@@ -31,10 +39,10 @@
       </span>
 
     </div>
-    <canvas width="600" height="600"></canvas><!--ligado ao javascript, o canva serve como uma tela interativa -->
+    <canvas width="600" height="600"></canvas>
   </main>
 
-    <footer>Desenvolvido por @_ivanpaulino 2024</footer>
+    <footer>Desenvolvido por Marcella Harumy 2024</footer>
   <!--<canvas width="600" height="400"></canvas>-->
   <!--<canvas id="stage" width="600" height="600"></canvas>-->
   <script src="assents/script.js"></script>
